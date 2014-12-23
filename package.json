@@ -31,7 +31,6 @@
     "hubot-tell": "*",
     "applause":"*",
     "ascii":"*",
-    "beerme":"*"
   },
   "engines": {
     "node": "0.10.x"
