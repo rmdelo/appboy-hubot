@@ -29,8 +29,8 @@
     "hubot-victory": ">= 0.0.0",     
     "hubot-airtime": "latest",
     "hubot-tell": "*",
-    "advice":"*",
-    "applause":"*"
+    "applause":"*",
+    "ascii":"*"
   },
   "engines": {
     "node": "0.10.x"
