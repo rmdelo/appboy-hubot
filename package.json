@@ -28,8 +28,8 @@
     "hubot-what-the-fox": "*",
     "hubot-victory": ">= 0.0.0",     
     "hubot-airtime": "latest",
-    "hubot-tell": "*"
-
+    "hubot-tell": "*",
+    "hubot-advice":"*"
   },
   "engines": {
     "node": "0.10.x"
