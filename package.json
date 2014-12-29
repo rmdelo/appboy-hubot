@@ -30,7 +30,8 @@
     "hubot-airtime": "latest",
     "hubot-tell": "*",
     "applause":"*",
-    "ascii":"*"
+    "ascii":"*",
+    "quote":"*"
   },
   "engines": {
     "node": "0.10.x"
