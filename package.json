@@ -24,7 +24,6 @@
     "hubot-humanity": "*",
     "hubot-seriouslyguys": "*",
     "hubot-dogeme": "*",
-    "hubot-soon": "*",
     "hubot-what-the-fox": "*",
     "hubot-victory": ">= 0.0.0",     
     "hubot-airtime": "latest",
