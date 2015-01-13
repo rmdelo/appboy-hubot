@@ -13,6 +13,9 @@ module.exports = (robot) ->
    robot.hear /make it rain/i, (msg) ->
      msg.send "https://s3.amazonaws.com/uploads.hipchat.com/12562/184609/xdhwG85hEGYKVeR/rainingkev-2.gif"
 
+   robot.hear /making it rain/i, (msg) ->
+     msg.send "https://s3.amazonaws.com/uploads.hipchat.com/12562/184609/xdhwG85hEGYKVeR/rainingkev-2.gif"
+
    robot.hear /rain bomb( (\d+))?/i, (msg) ->
      count = msg.match[2] || 5
      for i in [1..count] by 1
