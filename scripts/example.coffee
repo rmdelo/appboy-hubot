@@ -10,10 +10,7 @@
 
 module.exports = (robot) ->
 
-   robot.hear /make it rain/i, (msg) ->
-     msg.send "https://s3.amazonaws.com/uploads.hipchat.com/12562/184609/xdhwG85hEGYKVeR/rainingkev-2.gif"
-
-   robot.hear /making it rain/i, (msg) ->
+   robot.hear /make it rain|making it rain|made it rain/i, (msg) ->
      msg.send "https://s3.amazonaws.com/uploads.hipchat.com/12562/184609/xdhwG85hEGYKVeR/rainingkev-2.gif"
 
    robot.hear /rain bomb( (\d+))?/i, (msg) ->
