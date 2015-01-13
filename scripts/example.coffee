@@ -10,8 +10,8 @@
 
 module.exports = (robot) ->
 
-  # robot.hear /badger/i, (msg) ->
-  #   msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+   robot.hear /make it rain/i, (msg) ->
+     msg.send "https://s3.amazonaws.com/uploads.hipchat.com/12562/184609/xdhwG85hEGYKVeR/rainingkev-2.gif"
   #
   # robot.respond /open the (.*) doors/i, (msg) ->
   #   doorType = msg.match[1]
