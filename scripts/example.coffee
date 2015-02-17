@@ -1,3 +1,26 @@
+ball = [
+   "It is certain",
+   "It is decidedly so",
+   "Without a doubt",
+   "Yes – definitely",
+   "You may rely on it",
+   "As I see it, yes",
+   "Most likely",
+   "Outlook good",
+   "Signs point to yes",
+   "Yes",
+   "Reply hazy, try again",
+   "Ask again later",
+   "Better not tell you now",
+   "Cannot predict now",
+   "Concentrate and ask again",
+   "Don't count on it",
+   "My reply is no",
+   "My sources say no",
+   "Outlook not so good",
+   "Very doubtful",
+]
+
 module.exports = (robot) ->
 
    robot.hear /make it rain|making it rain|made it rain/i, (msg) ->
@@ -22,29 +45,6 @@ module.exports = (robot) ->
      msg.http("http://corginator.herokuapp.com/bomb?count=" + count)
       .get() (err, res, body) ->
         msg.send corgi for corgi in JSON.parse(body).corgis
-
-   ball = [
-   "It is certain",
-   "It is decidedly so",
-   "Without a doubt",
-   "Yes – definitely",
-   "You may rely on it",
-   "As I see it, yes",
-   "Most likely",
-   "Outlook good",
-   "Signs point to yes",
-   "Yes",
-   "Reply hazy, try again",
-   "Ask again later",
-   "Better not tell you now",
-   "Cannot predict now",
-   "Concentrate and ask again",
-   "Don't count on it",
-   "My reply is no",
-   "My sources say no",
-   "Outlook not so good",
-   "Very doubtful",
-   ]
 
    robot.respond /(eightball|8ball)(.*)/i, (msg) ->
      msg.reply msg.random ball
