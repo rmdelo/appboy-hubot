@@ -47,4 +47,4 @@ module.exports = (robot) ->
         msg.send corgi for corgi in JSON.parse(body).corgis
 
    robot.respond /(eightball|8ball)(.*)/i, (msg) ->
-     msg.send "hello"
+     msg.reply msg.random ball 
