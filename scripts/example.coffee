@@ -57,8 +57,3 @@ module.exports = (robot) ->
 
    robot.respond /brewster me/i, (msg) ->
      msg.send msg.random brewster  
-
-   robot.respond /brester bomb( (\d+))?/i, (msg) ->
-     count = msg.match[2] || 3
-     for i in [0..count] by 1
-       msg.send msg.random brewster
