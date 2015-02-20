@@ -21,6 +21,12 @@ ball = [
    "Very doubtful",
 ]
 
+brewster = [
+  "https://pbs.twimg.com/media/B-O4-12IQAAq4Oe.jpg",
+  "https://scontent.xx.fbcdn.net/hphotos-xfa1/t31.0-8/472282_3233937731848_1520286744_o.jpg",
+  "https://pbs.twimg.com/media/B6sPBXRCAAApQrz.jpg",
+]
+
 module.exports = (robot) ->
 
    robot.hear /make it rain|making it rain|made it rain/i, (msg) ->
@@ -48,3 +54,11 @@ module.exports = (robot) ->
 
    robot.respond /(eightball|8ball)(.*)/i, (msg) ->
      msg.reply msg.random ball 
+
+   robot.respond /brewster me/i, (msg) ->
+     msg.reply msg.random brewster  
+
+   robot.respond /brester bomb( (\d+))?/i, (msg) ->
+     count = msg.match[2] || 3
+     for i in [0..count] by 1
+       msg.reply msg.random brewster
